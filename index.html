@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta -->
+    <title>Дом у воды Хлепень | Премиум отдых на Вазузском водохранилище</title>
+    <meta name="description"
+        content="Премиум отдых для рыбаков и охотников в 220 км от Москвы. Современный дом, баня-бочка, причал, рыбалка круглый год. Бронируйте онлайн!">
+    <meta name="keywords" content="рыбалка Вазуза, дом у воды, отдых Смоленск, рыбалка Москва, аренда дома рыбалка">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Дом у воды Хлепень — Твоё место силы">
+    <meta property="og:description" content="Премиум отдых для рыбаков на Вазузском водохранилище">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vazuza-fisherhouse.ru">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Switcher Styles -->
+    <style>
+        .font-switcher {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 9999;
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 12px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .font-switcher button {
+            padding: 8px 16px;
+            border: 1px solid #444;
+            border-radius: 8px;
+            background: #222;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .font-switcher button:hover {
+            border-color: #ff4a4a;
+        }
+
+        .font-switcher button.active {
+            background: #ff4a4a;
+            border-color: #ff4a4a;
+        }
+
+        body.font-inter {
+            font-family: 'Inter', sans-serif !important;
+        }
+
+        body.font-roboto {
+            font-family: 'Roboto', sans-serif !important;
+        }
+
+        body.font-manrope {
+            font-family: 'Manrope', sans-serif !important;
+        }
+
+        body.font-inter *,
+        body.font-roboto *,
+        body.font-manrope * {
+            font-family: inherit !important;
+        }
+    </style>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#" class="logo">
+                <span class="logo__icon">🏠</span>
+                <span class="logo__text">Дом у воды</span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <a href="#about" class="nav__link">О доме</a>
+                <a href="#gallery" class="nav__link">Галерея</a>
+                <a href="#booking" class="nav__link">Бронирование</a>
+                <a href="#location" class="nav__link">Как добраться</a>
+            </nav>
+
+            <a href="#booking" class="btn btn--primary header__btn">Забронировать</a>
+
+            <button class="burger" id="burger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__bg">
+            <div class="hero__overlay"></div>
+        </div>
+
+        <div class="container hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Дом у воды<br>
+                    <span class="hero__subtitle">на Вазузском водохранилище</span>
+                </h1>
+
+                <p class="hero__description">
+                    Премиум отдых для рыбаков и охотников в 220 км от Москвы
+                </p>
+
+                <div class="hero__actions">
+                    <a href="#booking" class="btn btn--primary btn--lg">Забронировать</a>
+                    <a href="#about" class="btn btn--outline btn--lg">О доме</a>
+                </div>
+
+                <div class="hero__stats">
+                    <div class="stat">
+                        <span class="stat__number">220</span>
+                        <span class="stat__label">км от Москвы</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">3</span>
+                        <span class="stat__label">спальни</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">8</span>
+                        <span class="stat__label">гостей</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__scroll">
+            <span>Листай вниз</span>
+            <div class="hero__scroll-icon"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__badge">О нашем месте</span>
+                <h2 class="section__title">Уединённый отдых<br>на берегу водохранилища</h2>
+            </div>
+
+            <div class="about__grid">
+                <div class="about__content">
+                    <p class="about__text">
+                        Дом у воды в деревне Хлепень — это идеальное место для тех, кто ценит
+                        настоящую рыбалку и комфортный отдых на природе. Мы находимся на берегу
+                        Вазузского водохранилища, где водится щука, судак, лещ и окунь.
+                    </p>
+                    <p class="about__text">
+                        Современный дом полностью оборудован для комфортного проживания:
+                        3 спальни, 2 санузла, полноценная кухня, отопление.
+                        А баня-бочка с видом на воду сделает ваш отдых незабываемым.
+                    </p>
+
+                    <div class="about__features">
+                        <div class="feature">
+                            <span class="feature__icon">🎣</span>
+                            <span class="feature__text">Рыбалка круглый год</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature__icon">🔥</span>
+                            <span class="feature__text">Баня на 6 человек</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature__icon">⚓</span>
+                            <span class="feature__text">Причал для лодок</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__image">
+                    <div class="about__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?w=800" alt="Дом у воды"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities section" id="amenities">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__badge">Удобства</span>
+                <h2 class="section__title">Всё для идеального отдыха</h2>
+                <p class="section__subtitle">Мы продумали каждую деталь вашего комфорта</p>
+            </div>
+
+            <div class="amenities__grid">
+                <div class="amenity-card">
+                    <div class="amenity-card__icon">🎣</div>
+                    <h3 class="amenity-card__title">Рыбалка мечты</h3>
+                    <p class="amenity-card__text">Щука, судак, лещ, окунь круглый год. Собственный причал и спуск к
+                        воде.</p>
+                </div>
+
+                <div class="amenity-card">
+                    <div class="amenity-card__icon">🏠</div>
+                    <h3 class="amenity-card__title">Современный дом</h3>
+                    <p class="amenity-card__text">3 спальни, 2 санузла, оборудованная кухня. Всё для комфортного
+                        проживания.</p>
+                </div>
+
+                <div class="amenity-card">
+                    <div class="amenity-card__icon">🔥</div>
+                    <h3 class="amenity-card__title">Баня-бочка</h3>
+                    <p class="amenity-card__text">Настоящая русская баня на 6 человек с панорамным видом на воду.</p>
+                </div>
+
+                <div class="amenity-card">
+                    <div class="amenity-card__icon">⚓</div>
+                    <h3 class="amenity-card__title">Причал</h3>
+                    <p class="amenity-card__text">Удобный спуск к воде и причал для ваших лодок.</p>
+                </div>
+
+                <div class="amenity-card">
+                    <div class="amenity-card__icon">🍖</div>
+                    <h3 class="amenity-card__title">Барбекю-зона</h3>
+                    <p class="amenity-card__text">Беседка, мангал, коптильня — всё для незабываемых ужинов на природе.
+                    </p>
+                </div>
+
+                <div class="amenity-card">
+                    <div class="amenity-card__icon">🌲</div>
+                    <h3 class="amenity-card__title">Уединение</h3>
+                    <p class="amenity-card__text">Тишина, природа и никаких соседей. Только вы и водохранилище.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__badge">Галерея</span>
+                <h2 class="section__title">Взгляните на наш дом</h2>
+            </div>
+
+            <div class="gallery__grid">
+                <div class="gallery__item gallery__item--large">
+                    <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800" alt="Дом снаружи"
+                        loading="lazy">
+                </div>
+                <div class="gallery__item">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600" alt="Интерьер"
+                        loading="lazy">
+                </div>
+                <div class="gallery__item">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600" alt="Спальня"
+                        loading="lazy">
+                </div>
+                <div class="gallery__item">
+                    <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=600" alt="Кухня"
+                        loading="lazy">
+                </div>
+                <div class="gallery__item">
+                    <img src="https://images.unsplash.com/photo-1545083036-b175dd155a1d?w=600" alt="Баня"
+                        loading="lazy">
+                </div>
+                <div class="gallery__item gallery__item--large">
+                    <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800" alt="Рыбалка"
+                        loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking section" id="booking">
+        <div class="container">
+            <div class="booking__wrapper">
+                <div class="booking__info">
+                    <span class="section__badge">Бронирование</span>
+                    <h2 class="section__title">Забронируйте<br>ваш отдых</h2>
+
+                    <div class="booking__price">
+                        <span class="booking__price-label">Стоимость от</span>
+                        <span class="booking__price-value">15 000 ₽</span>
+                        <span class="booking__price-period">/ сутки</span>
+                    </div>
+
+                    <ul class="booking__includes">
+                        <li>✓ Проживание до 8 человек</li>
+                        <li>✓ Баня-бочка</li>
+                        <li>✓ Барбекю-зона</li>
+                        <li>✓ Причал для лодок</li>
+                        <li>✓ Постельное бельё</li>
+                        <li>✓ Все удобства</li>
+                    </ul>
+                </div>
+
+                <div class="booking__form-wrapper">
+                    <form class="booking__form" id="bookingForm">
+                        <div class="form-group">
+                            <label for="checkIn">Заезд</label>
+                            <input type="date" id="checkIn" name="checkIn" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="checkOut">Выезд</label>
+                            <input type="date" id="checkOut" name="checkOut" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guests">Количество гостей</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Выберите</option>
+                                <option value="2">2 гостя</option>
+                                <option value="4">4 гостя</option>
+                                <option value="6">6 гостей</option>
+                                <option value="8">8 гостей</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+
+                        <p class="booking__privacy">
+                            Нажимая кнопку, вы соглашаетесь с
+                            <a href="#">политикой конфиденциальности</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location section" id="location">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__badge">Как добраться</span>
+                <h2 class="section__title">Мы ждём вас!</h2>
+                <p class="section__subtitle">д. Хлепень, Сычёвский район, Смоленская область</p>
+            </div>
+
+            <div class="location__grid">
+                <div class="location__map">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A2a1d9c0e8d0f4b5e8c0d1e2f3a4b5c6d&amp;source=constructor"
+                        width="100%" height="400" frameborder="0" loading="lazy"></iframe>
+                </div>
+
+                <div class="location__info">
+                    <div class="location__route">
+                        <h3>Из Москвы</h3>
+                        <p>220 км по Новорижскому шоссе, около 3 часов</p>
+                    </div>
+
+                    <div class="location__nav-buttons">
+                        <a href="yandexnavi://build_route_on_map?lat_to=55.96231&lon_to=34.46818"
+                            class="btn btn--outline">
+                            🚗 Яндекс Навигатор
+                        </a>
+                        <a href="dgis://2gis.ru/routeSearch/rsType/car/to/34.46818,55.96231" class="btn btn--outline">
+                            🚗 2ГИС
+                        </a>
+                    </div>
+
+                    <div class="location__contacts">
+                        <a href="tel:+79964159405" class="contact-link">
+                            <span class="contact-link__icon">📞</span>
+                            <span>+7 (996) 415-94-05</span>
+                        </a>
+                        <a href="mailto:sales@vazuza-fisherhouse.ru" class="contact-link">
+                            <span class="contact-link__icon">📧</span>
+                            <span>sales@vazuza-fisherhouse.ru</span>
+                        </a>
+                        <a href="https://t.me/vazuzafisherhouse" class="contact-link">
+                            <span class="contact-link__icon">💬</span>
+                            <span>Telegram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#" class="logo logo--footer">
+                        <span class="logo__icon">🏠</span>
+                        <span class="logo__text">Дом у воды</span>
+                    </a>
+                    <p class="footer__tagline">Твоё место силы на Вазузском водохранилище</p>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Навигация</h4>
+                    <a href="#about">О месте</a>
+                    <a href="#amenities">Удобства</a>
+                    <a href="#gallery">Галерея</a>
+                    <a href="#booking">Бронирование</a>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Документы</h4>
+                    <a href="#">Оферта</a>
+                    <a href="#">Конфиденциальность</a>
+                    <a href="#">Правила проживания</a>
+                </div>
+
+                <div class="footer__contacts">
+                    <h4>Контакты</h4>
+                    <a href="tel:+79964159405">+7 (996) 415-94-05</a>
+                    <a href="mailto:sales@vazuza-fisherhouse.ru">sales@vazuza-fisherhouse.ru</a>
+                    <div class="footer__socials">
+                        <a href="#" aria-label="Telegram">💬</a>
+                        <a href="#" aria-label="WhatsApp">📱</a>
+                        <a href="#" aria-label="VK">🔵</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>© 2026 Дом у воды Хлепень. Все права защищены.</p>
+                <p>ИП Емельянов Е.Ю., ИНН 504409892030</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Switcher -->
+    <div class="font-switcher">
+        <button onclick="setFont('inter')" id="btn-inter">Inter</button>
+        <button onclick="setFont('roboto')" id="btn-roboto">Roboto</button>
+        <button onclick="setFont('manrope')" id="btn-manrope">Manrope</button>
+    </div>
+
+    <script>
+        function setFont(font) {
+            document.body.classList.remove('font-inter', 'font-roboto', 'font-manrope');
+            document.body.classList.add('font-' + font);
+
+            document.querySelectorAll('.font-switcher button').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('btn-' + font).classList.add('active');
+        }
+
+        // Default to Inter
+        setFont('inter');
+    </script>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
